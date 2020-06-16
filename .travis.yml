@@ -22,7 +22,7 @@ script:
   - ls -l ./release
 
 before_deploy:
-  - zip -r ./release.zip ./release
+  # - zip -r ./release.zip ./release
   - export TRAVIS_TAG="latest"
   - git tag $TAVIS_TAG
 
@@ -30,7 +30,10 @@ deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN 
-  file: "./release/ArgumentLib.dll"
+  # file: "release.zip"
+  file:
+    - ./release/ArgumentsLib.dll
+    - ./release/Argument.dll
   skip_cleanup: true
   keep_history: true
   on:
