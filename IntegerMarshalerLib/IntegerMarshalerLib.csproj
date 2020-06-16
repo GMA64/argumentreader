@@ -12,6 +12,22 @@
     <CompiledFiles Include="$(TargetPath)"/>
   </ItemGroup>
 
+  <!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)ArgumentsLibTest\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)Arguments\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+  </Target>-->
+
+  <ItemGroup>
+    <CompiledFiles Include="$(TargetPath)"/>
+  </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Copy
         SourceFiles="@(CompiledFiles)"
