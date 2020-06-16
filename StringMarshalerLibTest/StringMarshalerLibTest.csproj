@@ -13,9 +13,24 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <ProjectReference Include="..\ArgumentMarshalerLib\ArgumentMarshalerLib.csproj" />
     <ProjectReference Include="..\StringMarshalerLib\StringMarshalerLib.csproj" />
-  </ItemGroup>
+  </ItemGroup>-->
 
+  <ItemGroup>
+    <CompiledFiles Include="$(TargetPath)"/>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)ArgumentsLibTest\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)Arguments\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+  </Target>
 </Project>
