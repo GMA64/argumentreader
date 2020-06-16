@@ -24,17 +24,11 @@
   <ItemGroup>
     <Folder Include="Marshaler\" />
   </ItemGroup>
-
+  
   <ItemGroup>
-    <None Update="Marshaler\BooleanMarshalerLib.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Marshaler\DoubleMarshalerLib.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Marshaler\IntegerMarshalerLib.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Content Include="Marshaler\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
