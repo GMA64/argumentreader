@@ -5,6 +5,7 @@ using IntegerMarshalerLib;
 using StringMarshalerLib;
 using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using Xunit;
 
@@ -12,7 +13,7 @@ namespace ArgumentsLibTest
 {
     public class ArgumentsTest
     {
-        private string marshalers = @".\Marshaler";
+        private string marshalers = @"Marshaler";
         private string schema = "text*,int#,double##,bool,booltwo";
         private string[] args =
         {
@@ -21,7 +22,7 @@ namespace ArgumentsLibTest
             "-int",
             "1234",
             "-double",
-            "1234,4321",
+            Convert.ToDouble("1234,4321", CultureInfo.CreateSpecificCulture("de-AT")).ToString(),
             "-bool"
         };
 

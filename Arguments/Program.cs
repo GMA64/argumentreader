@@ -12,7 +12,7 @@ namespace Argument
 
             try
             {
-                parameter = new Arguments(@"Marshaler", "bool,booltwo,int#,double##,string*", args);
+                parameter = new Arguments(@".\Marshaler", "bool,booltwo,int#,double##,string*", args);
                 Console.WriteLine("Arguments");
             }
             catch (ArgumentsException ex)

@@ -26,7 +26,7 @@ namespace DoubleMarshalerLib
             }
         }
 
-        public class DoubleMarshalerException : ArgumentMarshalerLib.ArgumentsException
+        public class DoubleMarshalerException : ArgumentsException
         {
             public DoubleMarshalerException(ErrorCode errorCode) : base(errorCode) { }
 

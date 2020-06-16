@@ -12,7 +12,7 @@ namespace BooleanMarshalerLib
             Value = true;
         }
 
-        public class BooleanMarshalerException : ArgumentMarshalerLib.ArgumentsException
+        public class BooleanMarshalerException : ArgumentsException
         {
             public override string ErrorMessage()
             {

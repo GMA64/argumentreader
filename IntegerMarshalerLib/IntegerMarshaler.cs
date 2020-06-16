@@ -26,7 +26,7 @@ namespace IntegerMarshalerLib
             }
         }
 
-        public class IntegerMarshalerException : ArgumentMarshalerLib.ArgumentsException
+        public class IntegerMarshalerException : ArgumentsException
         {
             public IntegerMarshalerException(ErrorCode errorCode) : base(errorCode) { }
 

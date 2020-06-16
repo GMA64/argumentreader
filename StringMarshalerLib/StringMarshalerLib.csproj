@@ -12,9 +12,6 @@
     <CompiledFiles Include="$(TargetPath)"/>
   </ItemGroup>
 
-  <ItemGroup>
-    <CompiledFiles Include="$(TargetPath)"/>
-  </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Copy
         SourceFiles="@(CompiledFiles)"

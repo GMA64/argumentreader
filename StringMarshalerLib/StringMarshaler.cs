@@ -19,7 +19,7 @@ namespace StringMarshalerLib
             }
         }
 
-        public class StringMarshalerException : ArgumentMarshalerLib.ArgumentsException
+        public class StringMarshalerException : ArgumentsException
         {
             public StringMarshalerException() { }
 
