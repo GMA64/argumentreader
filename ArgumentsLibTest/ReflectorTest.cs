@@ -12,7 +12,7 @@ namespace ArgumentsLibTest
 {
     public class ReflectorTest
     {
-        private string marshalers = @".\Marshaler";
+        private string marshalers = @"Marshaler";
         private string[] schemas = { "", "*", "#", "##" };
 
         [Fact]
