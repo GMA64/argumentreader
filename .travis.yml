@@ -6,6 +6,11 @@ solution: ArgumentsExtended.sln
 mono: none
 dotnet: 3.1.301
 
+addons:
+  apt:
+    packages:
+      - zip
+
 install:
   - dotnet restore
 
@@ -15,3 +20,16 @@ script:
   - mkdir ./release
   - dotnet publish -c Release -o ./release --self-contained false
   - ls -l ./release
+
+before_deploy:
+  - zip -r ./release.zip ./release
+
+deploy:
+  provider: releases
+  overwrite: true
+  api_key: $GITHUB_TOKEN 
+  file: "release.zip"
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: master
