@@ -13,5 +13,5 @@ script:
   - dotnet build --configuration Release
   - dotnet test 
   - mkdir ./release
-  - dotnet publish -o ./release
+  - dotnet publish -c Release -o ./release --self-contained false
   - ls -l ./release
