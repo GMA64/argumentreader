@@ -35,4 +35,3 @@ deploy:
   keep_history: true
   on:
     branch: master
-    condition: $TRAVIS_TAG = 'latest'
