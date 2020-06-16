@@ -15,4 +15,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="$(SolutionDir)Marshaler\" CopyToOutputDirectory="Always"/>
+  </ItemGroup>
+
 </Project>
