@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArgumentMarshalerLib\ArgumentMarshalerLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <CompiledFiles Include="$(TargetPath)"/>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)ArgumentsLibTest\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)Arguments\Marshaler"
+        SkipUnchangedFiles="true"
+          />
+  </Target>
+
+</Project>

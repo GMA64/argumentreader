@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Argument": {
+      "commandName": "Project",
+      "commandLineArgs": "-bool -int 1234 -double 1234,3421 -string \"Das ist ein Text\""
+    }
+  }
+}

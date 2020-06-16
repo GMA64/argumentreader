@@ -1,0 +1,14 @@
+# Travis CI for building ArgumentReader
+# --------------------------------------------
+
+language: csharp
+solution: ArgumentsExtended.sln
+mono: none
+dotnet: 3.1.301
+
+install:
+  - dotnet restore
+
+script:
+  - dotnet build
+
