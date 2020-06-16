@@ -23,6 +23,7 @@ script:
 
 before_deploy:
   - zip -r ./release.zip ./release
+  export: $TRAVIS_TAG = 'latest'
 
 deploy:
   provider: releases
@@ -33,4 +34,3 @@ deploy:
   keep_history: true
   on:
     branch: master
-    condition: $TRAVIS_TAG = 'latest'
