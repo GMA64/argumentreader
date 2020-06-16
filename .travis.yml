@@ -10,5 +10,8 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build
+  - dotnet build --configuration Release
   - dotnet test 
+  - mkdir ./release
+  - dotnet publish -o ./release
+  - ls -l ./release
