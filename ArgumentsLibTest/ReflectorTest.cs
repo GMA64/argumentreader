@@ -44,7 +44,7 @@ namespace ArgumentsLibTest
         [Fact]
         public void CreateReferenceAndSetDirectoryToWrongPath_FailingTest()
         {
-            string wrongPath = @"..\";
+            string wrongPath = @"../";
             Reflector r;
 
             ArgumentsException ex = Assert.Throws<LibraryArgumentException>(() => r = new Reflector(wrongPath));
