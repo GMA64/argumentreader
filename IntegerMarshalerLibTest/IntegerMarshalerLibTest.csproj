@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -17,18 +17,15 @@
     <ProjectReference Include="..\IntegerMarshalerLib\IntegerMarshalerLib.csproj" />
   </ItemGroup>-->
   <ItemGroup>
-    <CompiledFiles Include="$(TargetPath)"/>
+    <CompiledFiles Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArgumentMarshalerLib\ArgumentMarshalerLib.csproj" />
+    <ProjectReference Include="..\Arguments\Argument.csproj" />
+    <ProjectReference Include="..\IntegerMarshalerLib\IntegerMarshalerLib.csproj" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Copy
-        SourceFiles="@(CompiledFiles)"
-        DestinationFolder="$(SolutionDir)ArgumentsLibTest\Marshaler"
-        SkipUnchangedFiles="true"
-          />
-    <Copy
-        SourceFiles="@(CompiledFiles)"
-        DestinationFolder="$(SolutionDir)Arguments\Marshaler"
-        SkipUnchangedFiles="true"
-          />
+    <Copy SourceFiles="@(CompiledFiles)" DestinationFolder="$(SolutionDir)ArgumentsLibTest\Marshaler" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(CompiledFiles)" DestinationFolder="$(SolutionDir)Arguments\Marshaler" SkipUnchangedFiles="true" />
   </Target>
 </Project>
