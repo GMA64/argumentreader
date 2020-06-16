@@ -3,31 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argument", "Arguments\Argument.csproj", "{4D3A5E95-3734-4E44-8FF3-1ED00EEA54BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Argument", "Arguments\Argument.csproj", "{4D3A5E95-3734-4E44-8FF3-1ED00EEA54BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentsLib", "ArgumentsLib\ArgumentsLib.csproj", "{A92E061F-46B4-4C15-BA04-0A35E04B0880}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgumentsLib", "ArgumentsLib\ArgumentsLib.csproj", "{A92E061F-46B4-4C15-BA04-0A35E04B0880}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentsLibTest", "ArgumentsLibTest\ArgumentsLibTest.csproj", "{5136DBB5-E651-4C90-B173-104F35852087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgumentsLibTest", "ArgumentsLibTest\ArgumentsLibTest.csproj", "{5136DBB5-E651-4C90-B173-104F35852087}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8B1480C-E90E-413B-87D2-EACE9EB4F7ED} = {C8B1480C-E90E-413B-87D2-EACE9EB4F7ED}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentMarshalerLib", "ArgumentMarshalerLib\ArgumentMarshalerLib.csproj", "{7C90BE70-0FC7-4E54-942E-7C575772E5BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgumentMarshalerLib", "ArgumentMarshalerLib\ArgumentMarshalerLib.csproj", "{7C90BE70-0FC7-4E54-942E-7C575772E5BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanMarshalerLib", "BooleanMarshalerLib\BooleanMarshalerLib.csproj", "{C8B1480C-E90E-413B-87D2-EACE9EB4F7ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooleanMarshalerLib", "BooleanMarshalerLib\BooleanMarshalerLib.csproj", "{C8B1480C-E90E-413B-87D2-EACE9EB4F7ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMarshalerLib", "StringMarshalerLib\StringMarshalerLib.csproj", "{2063D71D-84F2-44DD-AEE6-5F9649BFA34B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringMarshalerLib", "StringMarshalerLib\StringMarshalerLib.csproj", "{2063D71D-84F2-44DD-AEE6-5F9649BFA34B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerMarshalerLib", "IntegerMarshalerLib\IntegerMarshalerLib.csproj", "{A8751E5D-A6E9-40EC-BF9E-0441EB40904E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegerMarshalerLib", "IntegerMarshalerLib\IntegerMarshalerLib.csproj", "{A8751E5D-A6E9-40EC-BF9E-0441EB40904E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanMarshalerLibTest", "BooleanMarshalerLibTest\BooleanMarshalerLibTest.csproj", "{F6A3ED7C-7276-49F6-940A-8FD38C35D5EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooleanMarshalerLibTest", "BooleanMarshalerLibTest\BooleanMarshalerLibTest.csproj", "{F6A3ED7C-7276-49F6-940A-8FD38C35D5EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMarshalerLibTest", "StringMarshalerLibTest\StringMarshalerLibTest.csproj", "{818F6902-5503-4242-9F23-D4895853CBBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringMarshalerLibTest", "StringMarshalerLibTest\StringMarshalerLibTest.csproj", "{818F6902-5503-4242-9F23-D4895853CBBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerMarshalerLibTest", "IntegerMarshalerLibTest\IntegerMarshalerLibTest.csproj", "{0ED5D45C-B30B-4E02-83A1-56410DBC5A23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegerMarshalerLibTest", "IntegerMarshalerLibTest\IntegerMarshalerLibTest.csproj", "{0ED5D45C-B30B-4E02-83A1-56410DBC5A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentMarshalerLibTest", "ArgumentMarshalerLibTest\ArgumentMarshalerLibTest.csproj", "{4D731FA4-D578-471A-8E67-0111911FD076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgumentMarshalerLibTest", "ArgumentMarshalerLibTest\ArgumentMarshalerLibTest.csproj", "{4D731FA4-D578-471A-8E67-0111911FD076}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8B1480C-E90E-413B-87D2-EACE9EB4F7ED} = {C8B1480C-E90E-413B-87D2-EACE9EB4F7ED}
+		{2063D71D-84F2-44DD-AEE6-5F9649BFA34B} = {2063D71D-84F2-44DD-AEE6-5F9649BFA34B}
+		{A92E061F-46B4-4C15-BA04-0A35E04B0880} = {A92E061F-46B4-4C15-BA04-0A35E04B0880}
+		{F31DDA37-DEB0-4F25-A9E1-44E8EBE84857} = {F31DDA37-DEB0-4F25-A9E1-44E8EBE84857}
+		{A8751E5D-A6E9-40EC-BF9E-0441EB40904E} = {A8751E5D-A6E9-40EC-BF9E-0441EB40904E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleMarshalerLib", "DoubleMarshalerLib\DoubleMarshalerLib.csproj", "{F31DDA37-DEB0-4F25-A9E1-44E8EBE84857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleMarshalerLib", "DoubleMarshalerLib\DoubleMarshalerLib.csproj", "{F31DDA37-DEB0-4F25-A9E1-44E8EBE84857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleMarshalerLibTest", "DoubleMarshalerLibTest\DoubleMarshalerLibTest.csproj", "{964EC274-2016-4ECE-84C8-6259A4BEEC9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleMarshalerLibTest", "DoubleMarshalerLibTest\DoubleMarshalerLibTest.csproj", "{964EC274-2016-4ECE-84C8-6259A4BEEC9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
