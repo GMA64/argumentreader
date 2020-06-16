@@ -30,7 +30,7 @@ deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN 
-  file: "release.zip"
+  file: "./release/ArgumentLib.dll"
   skip_cleanup: true
   keep_history: true
   on:
