@@ -21,7 +21,7 @@ namespace ArgumentsLibTest
             "-int",
             "1234",
             "-double",
-            "1234,4321",
+            "1234.4321",
             "-bool"
         };
 
