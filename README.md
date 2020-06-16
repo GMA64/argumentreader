@@ -37,7 +37,13 @@ Arguments paramenter = new Arguments("Path to Marshaler Liraries", "Schema", "Ar
 
 ```csharp
 Arguments parameter = new Arguments("...", "enabled, text*, number#, decimal##")
+
+enabled b = parameter.GetValue<bool>("enabled") // false
+text b = parameter.GetValue<string>("text") // false
+number b = parameter.GetValue<int>("number") // false
+decimal b = parameter.GetValue<double>("decimal") // false
 ```
+
 
 ---
 
