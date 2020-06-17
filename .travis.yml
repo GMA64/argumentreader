@@ -36,5 +36,4 @@ deploy:
     - ./release/StringMarshalerLib.dll
   skip_cleanup: true
   on:
-    branch: master
     tag: true
