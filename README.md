@@ -25,7 +25,7 @@ Arguments paramenter = new Arguments("Path to Marshaler Liraries", "Schema", "Ar
 ### Available Marshalers (Standards)
 - [BooleanMarshalerLib.dll](https://github.com/GMA64/argumentreader/releases/latest/download/BooleanMarshalerLib.dll)
 - [StringMarsahlerLib.dll](https://github.com/GMA64/argumentreader/releases/latest/download/StringMarsahlerLib.dll)
-- [IntegerMarshalerLib.dll]((https://github.com/GMA64/argumentreader/releases/latest/download/IntegerMarshalerLib.dll))
+- [IntegerMarshalerLib.dll](https://github.com/GMA64/argumentreader/releases/latest/download/IntegerMarshalerLib.dll)
 - [DoubleMarshalerLib.dll](https://github.com/GMA64/argumentreader/releases/latest/download/DoubleMarshalerLib.dll)
 
 ### Schema
