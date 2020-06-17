@@ -36,4 +36,4 @@ deploy:
     - ./release/StringMarshalerLib.dll
   skip_cleanup: true
   on:
-    tag: true
+    tags: true
