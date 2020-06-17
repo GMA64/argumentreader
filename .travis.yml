@@ -1,6 +1,5 @@
 # Travis CI for building ArgumentReader
 # --------------------------------------------
-
 language: csharp
 solution: ArgumentsExtended.sln
 mono: none
@@ -16,7 +15,6 @@ install:
 
 script:
   - dotnet test 
-
 
 before_deploy:
   - dotnet build -c Release -o ./release
