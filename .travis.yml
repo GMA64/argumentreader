@@ -27,13 +27,13 @@ deploy:
   overwrite: true
   api_key: $GITHUB_TOKEN 
   file:
-    - ./ArgumentReaderDLL.zip
-    - ./release/ArgumentMarshalerLib.dll
-    - ./release/ArgumentsLib.dll
-    - ./release/BooleanMarshalerLib.dll
-    - ./release/DoubleMarshalerLib.dll
-    - ./release/IntegerMarshalerLib.dll
-    - ./release/StringMarshalerLib.dll
+    - "./ArgumentReaderDLL.zip"
+    - "./release/ArgumentMarshalerLib.dll"
+    - "./release/ArgumentsLib.dll"
+    - "./release/BooleanMarshalerLib.dll"
+    - "./release/DoubleMarshalerLib.dll"
+    - "./release/IntegerMarshalerLib.dll"
+    - "./release/StringMarshalerLib.dll"
   skip_cleanup: true
   on:
     tags: true
