@@ -31,7 +31,10 @@ deploy:
   overwrite: true
   api_key: $GITHUB_TOKEN 
   file:
-    - ./release.zip
+    - ./release.zip/*
+    release/ArguemtnMarshalerLib.dll
+    release/ArgumentsLib.dll
+    release/BooleanMarshalerLib.dll
     - ./release/ArgumentMarshalerLib.dll
     - ./release/ArgumentsLib.dll
     - ./release/BooleanMarshalerLib.dll
