@@ -18,7 +18,9 @@ script:
 
 before_deploy:
   - dotnet build -c Release -o ./release
+  - ls -l ./release
   - zip ArgumentReader.zip ./release/*Lib.dll
+  - ls -l ./release
 
 deploy:
   provider: releases

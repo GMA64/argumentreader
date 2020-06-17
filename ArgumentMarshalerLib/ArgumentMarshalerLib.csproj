@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>GMA</Authors>
+    <Company>GMA^engineerign</Company>
+    <Description>
+      Description
+      With Argument Reader command line argumets can be passed into a .net core application. The standard project assist 4 types of argumnets:
+
+      Boolean
+      Strings (*)
+      Integer (#)
+      Doubles (##)
+      Own argument tyoes can be build with own classes. They need to inherit form the ArgumentMarshalerLib. Libraries are loading dynamicaly on startup. It is not necessary to recompile the complete solution.
+    </Description>
+    <Copyright>(c) 2020 GMA64</Copyright>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/GMA64/argumentreader</PackageProjectUrl>
+    <PackageTags>Command Line Interface, CLI, Arguments</PackageTags>
+    <PackageId>GMA.ArgumentsMarshalerLib</PackageId>
   </PropertyGroup>
 
 </Project>

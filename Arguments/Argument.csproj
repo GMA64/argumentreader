@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ArgumentMarshalerLib\ArgumentMarshalerLib.csproj" />
     <ProjectReference Include="..\ArgumentsLib\ArgumentsLib.csproj" />
   </ItemGroup>
 
