@@ -23,8 +23,8 @@ script:
 
 before_deploy:
   - zip -r ./latest.zip ./release/*Lib.dll
-  - export TRAVIS_TAG="latest"
-  - git tag $TAVIS_TAG
+  # - export TRAVIS_TAG="latest"
+  # - git tag $TAVIS_TAG
 
 deploy:
   provider: releases
@@ -42,3 +42,4 @@ deploy:
   keep_history: true
   on:
     branch: master
+    tag: true
