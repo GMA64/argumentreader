@@ -32,8 +32,12 @@ deploy:
   api_key: $GITHUB_TOKEN 
   # file: "release.zip"
   file:
+    - ./release/ArgumentMarshalerLib.dll
     - ./release/ArgumentsLib.dll
-    - ./release/Argument.dll
+    - ./release/BooleanMarshalerLib.dll
+    - ./release/DoubleMarshalerLib.dll
+    - ./release/IntegerMarshalerLib.dll
+    - ./release/StringMarshalerLib.dll
   skip_cleanup: true
   keep_history: true
   on:
