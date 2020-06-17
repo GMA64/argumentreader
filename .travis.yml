@@ -22,12 +22,7 @@ script:
   - ls -l ./release
 
 before_deploy:
-  - zip -r ./release.zip ./release/ArgumentMarshalerLib.dll
-  - zip ./release.zip ./release/ArgumentsLib.dll
-  - zip ./release.zip ./release/BooleanMarshalerLib.dll
-  - zip ./release.zip ./release/DoubleMarshalerLib.dll
-  - zip ./release.zip ./release/IntegerMarshalerLib.dll
-  - zip ./release.zip ./release/StringMarshalerLib.dll
+  - zip -r ./release.zip ./release
   - export TRAVIS_TAG="latest"
   - git tag $TAVIS_TAG
 
