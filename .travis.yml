@@ -23,6 +23,7 @@ script:
 
 before_deploy:
   - zip -r ./release.zip ./release
+  - zip -r ./latest.zip ./release/*Lib.dll
   - export TRAVIS_TAG="latest"
   - git tag $TAVIS_TAG
 
@@ -31,13 +32,7 @@ deploy:
   overwrite: true
   api_key: $GITHUB_TOKEN 
   file:
-  #   - ./release.zip/*
-  #   release/ArguemtnMarshalerLib.dll
-  #   release/ArgumentsLib.dll
-  #   release/BooleanMarshalerLib.dll
-  #   release/DoubleMarshalerLib.dll
-  #   release/IntegerMarshalerLib.dll
-  #   release/StringMarshalerLib.dll
+    - ./release.zip
     - ./release/ArgumentMarshalerLib.dll
     - ./release/ArgumentsLib.dll
     - ./release/BooleanMarshalerLib.dll
