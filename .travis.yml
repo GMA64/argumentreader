@@ -19,7 +19,7 @@ script:
 before_deploy:
   - dotnet build -c Release -o ./release
   - dotnet nuget push ./release/GMA.ArgumentsMarshalerLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
-  - dotnet nuget push ./release/GMA.ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/inde x.json" --skip-duplicate
+  - dotnet nuget push ./release/GMA.ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
   - zip ArgumentReader.zip ./release/*Lib.dll
 
 deploy:
