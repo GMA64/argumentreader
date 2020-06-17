@@ -18,7 +18,7 @@ script:
 
 before_deploy:
   - dotnet build -c Release -o ./release
-  - ls -l ./release
+  - dotnet nuget push ./release/GMA.AgrumentsLib.1.0.0.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" 
   - zip ArgumentReader.zip ./release/*Lib.dll
   - ls -l ./release
 
