@@ -15,23 +15,19 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build --configuration Release
   - dotnet test 
-  - mkdir ./release
-  - dotnet publish -c Release -o ./release --self-contained false
-  - ls -l ./release
+
 
 before_deploy:
-  - zip -r ./latest.zip ./release/*Lib.dll
-  # - export TRAVIS_TAG="latest"
-  # - git tag $TAVIS_TAG
+  - dotnet build -c Release -o ./release
+  - zip ArgumentReader.zip ./release/*Lib.dll
 
 deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN 
   file:
-    - ./latest.zip
+    - ./ArgumentReader.zip
     - ./release/ArgumentMarshalerLib.dll
     - ./release/ArgumentsLib.dll
     - ./release/BooleanMarshalerLib.dll
@@ -39,7 +35,6 @@ deploy:
     - ./release/IntegerMarshalerLib.dll
     - ./release/StringMarshalerLib.dll
   skip_cleanup: true
-  keep_history: true
   on:
     branch: master
     tag: true
