@@ -27,7 +27,7 @@ deploy:
   overwrite: true
   api_key: $GITHUB_TOKEN 
   file:
-    - ./ArgumentReader.zip
+    - ./ArgumentReaderDLL.zip
     - ./release/ArgumentMarshalerLib.dll
     - ./release/ArgumentsLib.dll
     - ./release/BooleanMarshalerLib.dll
