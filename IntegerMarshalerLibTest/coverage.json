@@ -1,0 +1,215 @@
+{
+  "ArgumentMarshalerLib.dll": {
+    "C:\\Users\\lwngrmc\\Documents\\GitHub\\argumentread\\ArgumentMarshalerLib\\ArgumentMarshaler.cs": {
+      "ArgumentMarshalerLib.ArgumentMarshaler": {
+        "System.Object ArgumentMarshalerLib.ArgumentMarshaler::get_Value()": {
+          "Lines": {
+            "7": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lwngrmc\\Documents\\GitHub\\argumentread\\ArgumentMarshalerLib\\ArgumentsException.cs": {
+      "ArgumentMarshalerLib.ArgumentsException": {
+        "System.String ArgumentMarshalerLib.ArgumentsException::get_ErrorArgumentId()": {
+          "Lines": {
+            "36": 13
+          },
+          "Branches": []
+        },
+        "System.String ArgumentMarshalerLib.ArgumentsException::get_ErrorParameter()": {
+          "Lines": {
+            "37": 8
+          },
+          "Branches": []
+        },
+        "ArgumentMarshalerLib.ErrorCode ArgumentMarshalerLib.ArgumentsException::get_ErrorCode()": {
+          "Lines": {
+            "38": 12
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(System.String)": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(ArgumentMarshalerLib.ErrorCode)": {
+          "Lines": {
+            "25": 3,
+            "26": 3,
+            "27": 3,
+            "28": 3
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(ArgumentMarshalerLib.ErrorCode,System.String)": {
+          "Lines": {
+            "30": 2,
+            "31": 2,
+            "32": 2,
+            "33": 2,
+            "34": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lwngrmc\\Documents\\GitHub\\argumentread\\ArgumentMarshalerLib\\Iterator.cs": {
+      "ArgumentMarshalerLib.Iterator`1": {
+        "T ArgumentMarshalerLib.Iterator`1::get_Current()": {
+          "Lines": {
+            "20": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean ArgumentMarshalerLib.Iterator`1::get_HasNext()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "T ArgumentMarshalerLib.Iterator`1::Next()": {
+          "Lines": {
+            "24": 8,
+            "25": 8,
+            "26": 7
+          },
+          "Branches": []
+        },
+        "T ArgumentMarshalerLib.Iterator`1::Previous()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.Iterator`1::.ctor(System.Collections.Generic.IList`1<T>)": {
+          "Lines": {
+            "12": 3,
+            "13": 3,
+            "14": 3,
+            "15": 0,
+            "17": 3,
+            "18": 3
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 14,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "IntegerMarshalerLib.dll": {
+    "C:\\Users\\lwngrmc\\Documents\\GitHub\\argumentread\\IntegerMarshalerLib\\IntegerMarshaler.cs": {
+      "IntegerMarshalerLib.IntegerArgumentMarshaler": {
+        "System.String IntegerMarshalerLib.IntegerArgumentMarshaler::get_Schema()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler::Set(ArgumentMarshalerLib.Iterator`1<System.String>)": {
+          "Lines": {
+            "11": 4,
+            "12": 4,
+            "15": 4,
+            "16": 4,
+            "17": 2,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1
+          },
+          "Branches": []
+        }
+      },
+      "IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerMarshalerException": {
+        "System.String IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerMarshalerException::ErrorMessage()": {
+          "Lines": {
+            "36": 5,
+            "37": 5,
+            "40": 2,
+            "42": 2,
+            "44": 1,
+            "46": 5
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 12,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 37,
+              "Offset": 12,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 18,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 18,
+              "EndOffset": 97,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerMarshalerException::.ctor(ArgumentMarshalerLib.ErrorCode)": {
+          "Lines": {
+            "31": 9
+          },
+          "Branches": []
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerMarshalerException::.ctor(ArgumentMarshalerLib.ErrorCode,System.String)": {
+          "Lines": {
+            "33": 6
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

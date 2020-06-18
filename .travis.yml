@@ -14,8 +14,11 @@ install:
   - dotnet restore
 
 script:
-  - dotnet test 
+  - dotnet test -c Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
+after_script:
+  - bash <(curl -s https://codecov.io/bash)>
+  
 before_deploy:
   - dotnet build -c Release -o ./release
   - zip ArgumentReader.zip ./release/*Lib.dll
