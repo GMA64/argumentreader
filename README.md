@@ -1,4 +1,5 @@
-[![Version: 1.0 Release](https://img.shields.io/badge/Version-1.0%20Release-green.svg)](https://github.com/GMA64) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Version: 1.0 Release](https://img.shields.io/badge/Version-1.0%20Release-green.svg)](https://github.com/GMA64) 
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](https://travis-ci.org/GMA64/argumentread.svg?branch=master)](https://travis-ci.org/GMA64/argumentread)
 # ArgumentReader
 ---
@@ -124,9 +125,13 @@ static void Main(string[] args)
 
 1. Create a new VisualStudio .net Standard Class (**??MarshalerLib**)
 1. Link a new projekt reference to ArgumentMarshalerLib.dll (in this repository)
-1. Write Marshaler (See example code below)
+1. Write Marshaler (See example code below) or download a Nuget(see below)
 1. Copy the TestMarshalerLib.dll to the Marshaler directory in your project
 1. Implement the *?* in your schema (e.g "mymarshaler?")
+
+```
+pm> Install-Package GMA.ArgumentsMarshalerLib
+```
 
 ```csharp
 
