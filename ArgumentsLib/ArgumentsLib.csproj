@@ -20,6 +20,7 @@ Own argument tyoes can be build with own classes. They need to inherit form the 
     <PackageProjectUrl>https://github.com/GMA64/argumentreader</PackageProjectUrl>
     <PackageTags>Command Line Interface, CLI, Arguments</PackageTags>
     <PackageId>GMA.ArgumentsLib</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

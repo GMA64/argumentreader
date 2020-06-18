@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -21,6 +21,7 @@
     <PackageProjectUrl>https://github.com/GMA64/argumentreader</PackageProjectUrl>
     <PackageTags>Command Line Interface, CLI, Arguments</PackageTags>
     <PackageId>GMA.ArgumentsMarshalerLib</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
