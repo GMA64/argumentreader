@@ -37,5 +37,5 @@ deploy:
     tags: true
 
 after_delploy:
-  - dotnet nuget push ./release/GMA.ArgumentsMarshalerLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
-  - dotnet nuget push ./release/GMA.ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+  - dotnet nuget push ./release/GMA.ArgumentsMarshalerLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json"
+  - dotnet nuget push ./release/GMA.ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json"
